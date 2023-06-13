@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet"  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./pages/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">   
+    <title>Full Drinks</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-light bg-dark min-vw-100">
+        <h2 class="p-3 text-white">Full Drinks</h2>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart mx-5" id="carritoContenedor">0</i></a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <h1 class="titulo">Bienvenidos a</h1>
+    
+    <div class="logoIndex">
+        <img class="logoInicio" src="./imagenes/LOGO FINAL.png" alt="Logo">
+    </div>  
+    <main>
+    <div class="row mt-5" id="contenedor"></div>
+    </main>
+    
+    <div class="container-xl">
+    <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tus Productos</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="vaciarCarrito">Vaciar carrito</button>
+                <a href="./pages/carrito.html"><button type="button" id="procesarCompra" class="btn btn-secondary">Continuar compra</button></a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <span>Total: $</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <footer class="datos">
+        <h5 class="leyenda">Pablo Contreras® - Todos los derechos reservados Full Drinks</h5>
+    </footer>
+
+    <script src="./pages/carrito.js"></script>
+    <script src="./pages/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
